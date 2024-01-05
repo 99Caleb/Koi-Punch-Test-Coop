@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MenuChanger : MonoBehaviour
 {
+    public GameObject toriiGate;
+    public GameObject tiltBox;
+    
     public GameObject destroyedVersion;
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +23,9 @@ public class MenuChanger : MonoBehaviour
 
     private void GateFall()
     {
-        
+        Rigidbody toriiGateRigidbody = toriiGate.GetComponent<Rigidbody> ();
+        toriiGateRigidbody.isKinematic = false;
+        //tiltBox.gameObject.transform.rotation = Quaternion.Euler(new Vector3(60, 0, 0));
+        tiltBox.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0.0f, 0.0f, -50), 100 * Time.deltaTime);
     }
 }
