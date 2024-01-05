@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Distructable : MonoBehaviour
+public class MenuChanger : MonoBehaviour
 {
     public GameObject destroyedVersion;
     private void OnTriggerEnter(Collider other)
@@ -16,5 +15,11 @@ public class Distructable : MonoBehaviour
     {
         Instantiate(destroyedVersion, transform.position, transform.rotation);
         Destroy(gameObject);
+        GateFall();
+    }
+
+    private void GateFall()
+    {
+        
     }
 }
