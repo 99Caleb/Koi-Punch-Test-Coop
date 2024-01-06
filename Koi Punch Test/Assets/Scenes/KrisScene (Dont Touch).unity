@@ -339,6 +339,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &548268673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6961130209864737755, guid: 744476f657801704f90ddac80b058230, type: 3}
+  m_PrefabInstance: {fileID: 898213109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &645147000
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +565,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8386380085177767033, guid: 744476f657801704f90ddac80b058230, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1403514445}
+    - targetCorrespondingSourceObject: {fileID: 6823338273195557937, guid: 744476f657801704f90ddac80b058230, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1934138082}
     - targetCorrespondingSourceObject: {fileID: 7669623970048870142, guid: 744476f657801704f90ddac80b058230, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1360712127}
@@ -677,7 +685,6 @@ MonoBehaviour:
   toriiGate: {fileID: 1403514442}
   tiltBox: {fileID: 452751821}
   newMenuGate: {fileID: 7668484177840030541, guid: 66047cfbed576b546b48731e5f2f2866, type: 3}
-  newMenuGateAnim: {fileID: -7010290144879704032, guid: 66047cfbed576b546b48731e5f2f2866, type: 3}
   destroyedVersion: {fileID: 3727243966027565812, guid: 978eea612ada422459b183ecb22ef53d, type: 3}
 --- !u!1 &1403514442 stripped
 GameObject:
@@ -841,6 +848,24 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!1 &1934138078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6823338273195557937, guid: 744476f657801704f90ddac80b058230, type: 3}
+  m_PrefabInstance: {fileID: 898213109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1934138082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934138078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b533a5b86b508664dbeebd71019deeb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 548268673}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
