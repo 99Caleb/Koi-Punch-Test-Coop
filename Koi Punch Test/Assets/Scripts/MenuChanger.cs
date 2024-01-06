@@ -21,8 +21,12 @@ public class MenuChanger : MonoBehaviour
         Instantiate(destroyedVersion, transform.position, transform.rotation);
         Instantiate(newMenuGate);
         Destroy(gameObject);
-        //GateFall();
-        StartCoroutine(FallOver());
+        Rigidbody toriiGateRigidbody = toriiGate.GetComponent<Rigidbody>();
+        toriiGateRigidbody.isKinematic = false;
+        Vector3 direction = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, -30);
+        Quaternion targetRotation = Quaternion.Euler(direction);
+        tiltBox.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotation, Time.deltaTime * 1);
+        Invoke("FallOver", 5f);
         /*Debug.Log("Yield returned");
         Vector3 backdirection = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 30);
         Quaternion targetRotation = Quaternion.Euler(backdirection);
@@ -30,26 +34,11 @@ public class MenuChanger : MonoBehaviour
         Destroy(toriiGate);*/
     }
 
-    private void GateFall()
+    public void FallOver()
     {
-        Rigidbody toriiGateRigidbody = toriiGate.GetComponent<Rigidbody>();
-        toriiGateRigidbody.isKinematic = false;
-        //tiltBox.gameObject.transform.rotation = Quaternion.Euler(new Vector3(60, 0, 0));
-        tiltBox.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0.0f, 0.0f, -50), 100 * Time.deltaTime);
-    }
-
-    public IEnumerator FallOver()
-    {
-        Rigidbody toriiGateRigidbody = toriiGate.GetComponent<Rigidbody>();
-        toriiGateRigidbody.isKinematic = false;
-        Vector3 direction = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, -30);
-        Quaternion targetRotation = Quaternion.Euler(direction);
-        tiltBox.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotation, Time.deltaTime * 1);
-        //tiltBox.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0.0f, 0.0f, -50), 100 * Time.deltaTime);
-        //tiltBox.transform.Rotate(Vector3.left* Time.deltaTime);
-        Debug.Log("before yeild");
-        yield return new WaitForSeconds(5);
         Debug.Log("Yield returned");
+        Vector3 backDirection = new Vector3(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, 30);
+        Quaternion targetRotation = Quaternion.Euler(backDirection);
         tiltBox.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRotation, Time.deltaTime * 1);
         //tiltBox.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, Quaternion.Euler(0.0f, 0.0f, 50), 100 * Time.deltaTime);
         Destroy(toriiGate);
