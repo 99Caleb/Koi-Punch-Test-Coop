@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicHigherGong : MonoBehaviour
+public class MusicHigherGong : TopScript
 {
     public AudioSource audioSource;
     public void OnMouseDown()
