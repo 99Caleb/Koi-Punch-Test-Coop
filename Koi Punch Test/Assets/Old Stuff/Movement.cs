@@ -13,11 +13,11 @@ public class Movement : MonoBehaviour
     float xRotation;
     float yRotation;
 
-    private void Start()
+    /*private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
+        Cursor.visible = true;
+    }*/
 
     private void Update()
     {

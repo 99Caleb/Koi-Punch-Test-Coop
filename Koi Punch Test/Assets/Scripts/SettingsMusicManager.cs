@@ -7,17 +7,26 @@ using UnityEngine;
 public class SettingsMusicManager : MonoBehaviour
 {
    public GameObject musicSlider;
+   private float volumeScale;
    
    private void Start()
    {
-      if (PlayerPrefs.HasKey("MusicVolume"))
+      PlayerPrefs.SetFloat("MusicVolume", 1);
+      
+      /*if (PlayerPrefs.HasKey("MusicVolume"))
       {
-         LoadVolume();
+         //LoadVolume();
       }
       else
       {
          SetMusicVolume();
-      }
+      }*/
+   }
+
+   private void Update()
+   {
+      volumeScale = PlayerPrefs.GetFloat("MusicVolume") * .45f;
+      musicSlider.transform.localScale = new Vector3(volumeScale, .05f, .1f);
    }
 
    public void SetMusicVolume()
@@ -25,8 +34,10 @@ public class SettingsMusicManager : MonoBehaviour
       PlayerPrefs.SetFloat("MusicVolume", 1);
    }
 
-   private void LoadVolume()
+   /*private void LoadVolume()
    {
+      musicSlider.transform.localScale = new Vector3(volumeScale, .05f, .1f);
       
-   }
+      SetMusicVolume();
+   }*/
 }
