@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicHigherGong : MonoBehaviour
 {
     public AudioSource audioSource;
-    public void OnMouseUpAsButton()
+    public void OnMouseDown()
     {
         if (PlayerPrefs.GetFloat("MusicVolume") >= 1f)
         {

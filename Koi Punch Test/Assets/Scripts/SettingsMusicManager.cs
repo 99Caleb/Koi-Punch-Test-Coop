@@ -11,7 +11,7 @@ public class SettingsMusicManager : MonoBehaviour
    
    private void Start()
    {
-      PlayerPrefs.SetFloat("MusicVolume", 1);
+      PlayerPrefs.GetFloat("MusicVolume");
       
       /*if (PlayerPrefs.HasKey("MusicVolume"))
       {
