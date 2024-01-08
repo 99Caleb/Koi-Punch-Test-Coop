@@ -594,7 +594,6 @@ GameObject:
   - component: {fileID: 3686573256664815901}
   - component: {fileID: 9168091169677621152}
   - component: {fileID: 7015491513221207317}
-  - component: {fileID: 2638500306179302754}
   m_Layer: 0
   m_Name: Torri Gate
   m_TagString: Untagged
@@ -673,18 +672,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2638500306179302754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8386380085177767033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d48738492a58e8458432e52e7b29a62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &310649883359603372
 PrefabInstance:
   m_ObjectHideFlags: 0
