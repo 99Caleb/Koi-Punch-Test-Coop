@@ -4,21 +4,13 @@ using UnityEngine;
 
 public class SceneChanger : MonoBehaviour
 {
-    public GameObject toriiGate;
-    public GameObject tiltBox;
-
-    public GameObject destroyedVersion;
-
+    public string newScene;
+    
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Entered");
-        GetDestroyed();
+        //make the sign explode from previous script & all other signs explode
+        Debug.Log("Hit");
     }
-
-    public void GetDestroyed()
-    {
-        Instantiate(destroyedVersion, transform.position, transform.rotation);
-        Destroy(gameObject);
-    }
+    
 
 }
