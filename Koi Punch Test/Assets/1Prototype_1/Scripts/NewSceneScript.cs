@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NewSceneScript : MonoBehaviour
+public class NewSceneScript : BreakWhenHit
 {
     [SerializeField] private string _newSceneName;
     [SerializeField] private FadeScreen _fadeScreen;
@@ -23,8 +23,8 @@ public class NewSceneScript : MonoBehaviour
     {
         _fadeScreen.FadeOut();
         yield return new WaitForSeconds(_fadeScreen.fadeDuration);
-        
-        //launch new scene
+
+        //Abcdefghijkl
         SceneManager.LoadScene(_newSceneName);
     }
 }
