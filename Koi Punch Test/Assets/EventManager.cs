@@ -7,7 +7,7 @@ public class EventManager : MonoBehaviour
 {
     public static event Action ExplodeEvent;
 
-    public static void SceneTransition()
+    public static void ExplodeTransition()
     {
         if (ExplodeEvent != null)
         {

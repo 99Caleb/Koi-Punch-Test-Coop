@@ -6,26 +6,23 @@ using UnityEngine;
 public class SceneTransition : MonoBehaviour
 {
     public Animator animator;
-    public bool isParentScript;
+    [SerializeField] private int hello;
+    
 
     private void Start()
     {
-        EventManager.ExplodeEvent += OnTransition;
+        EventManager.ExplodeEvent += ExplodeTransition;
     }
-
-    public void OnTransition()
+    private void ExplodeTransition()
     {
         animator.Play("Explode");
-        Invoke("DestroyThisObject",.6f);
+        Destroy(gameObject,0.6f);
     }
-
-    public void DestroyThisObject()
+    
+    private void OnDisable()
     {
-        Destroy(gameObject);
+        EventManager.ExplodeEvent -= ExplodeTransition;
     }
-
-    public void OnDisable()
-    {
-        EventManager.ExplodeEvent -= OnTransition;
-    }
+    
+    
 }
