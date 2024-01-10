@@ -6,7 +6,7 @@ public class BreakWhenHit : AnimateOnTransition
 {
     [SerializeField] private GameObject breakPrefab;
     
-    private void OnMouseDown()
+    protected void HittingSign()
     {
         Instantiate(breakPrefab,gameObject.transform.position,Quaternion.identity);
         EventManager.ExplodeTransition();

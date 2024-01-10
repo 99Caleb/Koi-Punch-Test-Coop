@@ -10,7 +10,7 @@ public class NewMenuScript : BreakWhenHit
     
     public void OnMouseDown()
     {
-        // break sign
+        HittingSign();
         // make all other signs break
         
         // make new signs appear, instantiate

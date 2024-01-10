@@ -11,7 +11,7 @@ public class NewSceneScript : BreakWhenHit
     
     public void OnMouseDown()
     {
-        // break sign
+        HittingSign();
         // make all other signs break
         
         // fade to white

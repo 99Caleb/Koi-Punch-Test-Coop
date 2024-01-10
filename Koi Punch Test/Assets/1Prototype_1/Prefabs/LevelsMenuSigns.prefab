@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 549622147219739435}
-  breakPrefab: {fileID: 0}
+  _explodingAnimClip: ResetScoreExplodeAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &703032577483573119
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 1732850854502545896}
   - component: {fileID: 1919782977813640768}
   - component: {fileID: 2058119930088064812}
+  - component: {fileID: 8008006749807393518}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -606,6 +607,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8008006749807393518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2298371758887385258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: LevelsTitleExplodeAnim
 --- !u!1 &2982803287285291813
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +808,7 @@ GameObject:
   - component: {fileID: 8322188297359711352}
   - component: {fileID: 8156847898204951251}
   - component: {fileID: 5965973753263135161}
+  - component: {fileID: 6082261422194741562}
   m_Layer: 0
   m_Name: LevelTwo
   m_TagString: Untagged
@@ -810,7 +825,7 @@ Transform:
   m_GameObject: {fileID: 3517367256324192449}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7070997, y: 0.0031615414, z: 0.003161541, w: 0.7070998}
-  m_LocalPosition: {x: -0.038153052, y: -0.61080366, z: -0.0014514327}
+  m_LocalPosition: {x: -0.03815305, y: -0.61080366, z: -0.001451433}
   m_LocalScale: {x: 0.17383197, y: 0.010566231, z: 0.18725963}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -912,6 +927,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6082261422194741562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517367256324192449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: LevelTwoExplodeAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &3680498622371753899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1166,7 @@ GameObject:
   - component: {fileID: 6075948065095489087}
   - component: {fileID: 5313410122895107341}
   - component: {fileID: 3306403201284784988}
+  - component: {fileID: 8532048096599029736}
   m_Layer: 0
   m_Name: LevelThree
   m_TagString: Untagged
@@ -1153,7 +1183,7 @@ Transform:
   m_GameObject: {fileID: 6526516951338677923}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6737593, y: 0.21458913, z: 0.21458913, w: 0.6737592}
-  m_LocalPosition: {x: -0.4777571, y: -0.61080366, z: 0.11783856}
+  m_LocalPosition: {x: -0.4777571, y: -0.6108037, z: 0.1178386}
   m_LocalScale: {x: 0.17383201, y: 0.010566229, z: 0.18725963}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1255,6 +1285,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8532048096599029736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6526516951338677923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: LevelThreeExplodeAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &6674363790347833745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1487,7 @@ GameObject:
   - component: {fileID: 8912557687128890799}
   - component: {fileID: 2860362353108247254}
   - component: {fileID: 4926789725070366695}
+  - component: {fileID: 7955824056869831405}
   m_Layer: 0
   m_Name: LevelOne
   m_TagString: Untagged
@@ -1459,7 +1504,7 @@ Transform:
   m_GameObject: {fileID: 7002042513853247075}
   serializedVersion: 2
   m_LocalRotation: {x: -0.67422384, y: -0.21312498, z: -0.21312499, w: 0.6742238}
-  m_LocalPosition: {x: 0.39983904, y: -0.61080366, z: 0.11783856}
+  m_LocalPosition: {x: 0.39983904, y: -0.6108037, z: 0.1178386}
   m_LocalScale: {x: 0.17383201, y: 0.010566228, z: 0.18725961}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1561,6 +1606,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7955824056869831405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7002042513853247075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: LevelOneExplodeAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &7078506392416508620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,8 +1807,8 @@ GameObject:
   - component: {fileID: 5597716728587558707}
   - component: {fileID: 3612272601015884339}
   - component: {fileID: 782002215471217712}
-  - component: {fileID: 1320997953396710616}
   - component: {fileID: 1940289352870096627}
+  - component: {fileID: 6190741401884230113}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1766,7 +1825,7 @@ Transform:
   m_GameObject: {fileID: 9019390634178621458}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5689015, y: -0.10437373, z: -0.0730833, w: 0.81247526}
-  m_LocalPosition: {x: -0.8445892, y: -0.82355326, z: 0.5992599}
+  m_LocalPosition: {x: -0.8445892, y: -0.8235533, z: 0.5992599}
   m_LocalScale: {x: 0.024209138, y: 0.15823379, z: 0.024209134}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1847,22 +1906,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.232509, y: 6.5680237, z: 92.55936}
   m_Center: {x: 0.08765117, y: -0.7928377, z: -27.194979}
---- !u!114 &1320997953396710616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9019390634178621458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acac7a2a0366baf468c125ca6e72a67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  breakPrefab: {fileID: 0}
-  _newSceneName: Play
-  _fadeScreen: {fileID: 0}
 --- !u!95 &1940289352870096627
 Animator:
   serializedVersion: 7
@@ -1885,3 +1928,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6190741401884230113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9019390634178621458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: MMfromLevelsExplodingAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
+  newMenuParent: {fileID: 7756397692314907075, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}

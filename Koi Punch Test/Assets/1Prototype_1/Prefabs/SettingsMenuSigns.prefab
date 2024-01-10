@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 1391270334078444860}
   - component: {fileID: 2835513815160727347}
   - component: {fileID: 5310319518230603384}
+  - component: {fileID: 3272403805088424308}
   m_Layer: 0
   m_Name: Music Sign
   m_TagString: Untagged
@@ -292,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 1492443297399948129}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15129246, y: 0.690732, z: 0.6907319, w: -0.15129249}
-  m_LocalPosition: {x: 0.10912806, y: -1.1291555, z: 4.9280853}
+  m_LocalPosition: {x: 0.1091281, y: -1.129156, z: 4.9280853}
   m_LocalScale: {x: 0.012444907, y: 0.014780693, z: 0.012444908}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -375,6 +376,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3272403805088424308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492443297399948129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: MusicSignExplodeAnim
 --- !u!1 &2211968222765252725
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +611,7 @@ GameObject:
   - component: {fileID: 3025586192024235764}
   - component: {fileID: 2258264127631943607}
   - component: {fileID: 2407781832486845382}
+  - component: {fileID: 2248280846661551906}
   m_Layer: 0
   m_Name: SFX sign
   m_TagString: Untagged
@@ -613,7 +628,7 @@ Transform:
   m_GameObject: {fileID: 3181052684799479576}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6915507, y: -0.14750494, z: -0.14750496, w: 0.6915506}
-  m_LocalPosition: {x: -1.2633085, y: -1.1291555, z: 4.550767}
+  m_LocalPosition: {x: -1.263309, y: -1.1291555, z: 4.550767}
   m_LocalScale: {x: 0.012444906, y: 0.014780691, z: 0.012444903}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -696,6 +711,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2248280846661551906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3181052684799479576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: SFXSignExplodeAnim
 --- !u!1 &3875512206459499548
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,6 +737,7 @@ GameObject:
   - component: {fileID: 4217036908723019302}
   - component: {fileID: 8113768233406186694}
   - component: {fileID: 3130995266854774909}
+  - component: {fileID: 1548675271924300110}
   m_Layer: 0
   m_Name: Back Sign
   m_TagString: Untagged
@@ -725,7 +754,7 @@ Transform:
   m_GameObject: {fileID: 3875512206459499548}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70709974, y: 0.003161541, z: 0.0031615414, w: 0.70709974}
-  m_LocalPosition: {x: -0.6698311, y: -0.48065007, z: 4.2881546}
+  m_LocalPosition: {x: -0.6698311, y: -0.48065007, z: 4.288155}
   m_LocalScale: {x: 0.19402988, y: 0.00654323, z: 0.115958706}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -796,9 +825,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  breakPrefab: {fileID: 0}
-  newMenuParent: {fileID: 0}
+  _explodingAnimClip: SettingsBackExplodeAnim
+  breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
+  newMenuParent: {fileID: 7756397692314907075, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}
 --- !u!95 &3130995266854774909
 Animator:
   serializedVersion: 7
@@ -821,6 +850,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1548675271924300110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875512206459499548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2.0000014, z: 10.765711}
+  m_Center: {x: -0.0000000020423288, y: 0.0000003576615, z: -3.2057812}
 --- !u!1 &4708164949329759471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1489,7 @@ GameObject:
   - component: {fileID: 600980759308528986}
   - component: {fileID: 3157629488191130236}
   - component: {fileID: 1724715676083700574}
+  - component: {fileID: 4369613608012495613}
   m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
@@ -1455,7 +1506,7 @@ Transform:
   m_GameObject: {fileID: 8541817054758158656}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.65582776, y: 0.2277404, z: 3.8288867}
+  m_LocalPosition: {x: -0.6558278, y: 0.2277404, z: 3.828887}
   m_LocalScale: {x: 0.52616465, y: 0.15769024, z: 0.34531036}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1537,6 +1588,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4369613608012495613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541817054758158656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explodingAnimClip: TitleandControlsExplodeAnim
 --- !u!1 &9061652746111626787
 GameObject:
   m_ObjectHideFlags: 0

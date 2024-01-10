@@ -5,16 +5,23 @@ using UnityEngine;
 
 public class AnimateOnTransition : MonoBehaviour
 {
-    public Animator animator;
+    private Animator _animator;
+    [SerializeField] private string _explodingAnimClip;
 
     private void Start()
     {
+        _animator = GetComponent<Animator>();
         EventManager.ExplodeEvent += ExplodeTransition;
     }
     private void ExplodeTransition()
     {
-        animator.Play("Exit");
-        Destroy(gameObject,0.6f);
+        if(_explodingAnimClip == null)
+        {
+            Debug.Log("audio clip not found");
+            return;
+        }
+        _animator.Play(_explodingAnimClip);
+        Destroy(gameObject,1f);
     }
     
     private void OnDisable()
