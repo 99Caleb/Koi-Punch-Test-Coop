@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NewMenuScript : MonoBehaviour
+public class NewMenuScript : BreakWhenHit
 {
     [SerializeField] private GameObject newMenuParent;
     
