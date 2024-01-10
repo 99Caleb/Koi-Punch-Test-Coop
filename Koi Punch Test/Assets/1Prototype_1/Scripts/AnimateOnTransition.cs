@@ -13,7 +13,7 @@ public class AnimateOnTransition : MonoBehaviour
     }
     private void ExplodeTransition()
     {
-        animator.Play("Explode");
+        animator.Play("Exit");
         Destroy(gameObject,0.6f);
     }
     

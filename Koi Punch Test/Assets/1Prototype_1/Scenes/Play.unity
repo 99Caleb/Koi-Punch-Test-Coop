@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 256561802}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.6201391, y: -0.9283081, z: 1.3894324}
+  m_LocalPosition: {x: 0.5, y: -0.9, z: 1.3894324}
   m_LocalScale: {x: 112.64528, y: 112.645256, z: 112.645256}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1585,14 +1585,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496636938}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -0.992, y: 1.06, z: 1.172}
+  m_LocalRotation: {x: -0.8105083, y: -0.18367445, z: 0.33572352, w: -0.44342944}
+  m_LocalPosition: {x: -0.992, y: 6.19, z: 1.172}
   m_LocalScale: {x: 0.47885603, y: 0.32587, z: 0.087666005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1493114861}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: -237.366, y: 45, z: 0}
 --- !u!114 &1496636944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1617,7 +1617,7 @@ Animator:
   m_GameObject: {fileID: 1496636938}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c3ea7ca2fb670149992967ad94a8bbf, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
