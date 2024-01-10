@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PlayScript : SceneTransition
 {
-    public GameObject parentObject;
+    [SerializeField] private GameObject breakPrefab;
     
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
-        Debug.Log("Heyeeyeyeyeyea");
-        EventManager.SceneTransition();
+        var position = transform.position;
+        Instantiate(breakPrefab,new Vector3(position.x,position.y + 1, position.z),Quaternion.Euler(new Vector3(0,0,0)));
+        Destroy(gameObject);
+        EventManager.ExplodeTransition();
+        
+        //Coding coding coding coding coding coding coding coding coding coding coding coding coding fancy coding coding coding coding coding coding coding coding coding coding coding coding coding coding coding coding coding coding
+        //coding coding coding coding coding coding coding coding coding coding coding coding coding
     }
 
 }
