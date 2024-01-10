@@ -2499,7 +2499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac7a2a0366baf468c125ca6e72a67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _newSceneName: Main Menu
+  _newSceneName: Play
   _fadeScreen: {fileID: 1176948180}
 --- !u!1 &9189465425958350227
 GameObject:
