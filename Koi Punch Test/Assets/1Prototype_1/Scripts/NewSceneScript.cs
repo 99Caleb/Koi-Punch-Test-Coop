@@ -7,10 +7,10 @@ using UnityEngine.SceneManagement;
 public class NewSceneScript : BreakWhenHit
 {
     [SerializeField] private string _newSceneName;
-    [SerializeField] private GameObject _fadeScreenObj;
+    private GameObject _fadeScreenObj;
     private FadeScreen _fadeScreen;
 
-    private void Start()
+    private void Awake()
     {
         _fadeScreenObj = GameObject.FindGameObjectWithTag("FadeScreen");
         _fadeScreen = _fadeScreenObj.GetComponent<FadeScreen>();

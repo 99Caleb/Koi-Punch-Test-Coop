@@ -15,8 +15,10 @@ public class AnimateOnTransition : MonoBehaviour
     }
     private void ExplodeTransition()
     {
-        _animator.SetTrigger("TransitionAnimation");
-        //_animator.Play(_explodingAnimClip);
+        if (_animator != null)
+        {
+            _animator.SetTrigger("TransitionAnimation");
+        }
         Destroy(gameObject,5f);
     }
     

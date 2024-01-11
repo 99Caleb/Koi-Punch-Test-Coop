@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 8d128452a64832045aff743ffe3c99e6, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &703032577483573119
 GameObject:
@@ -619,7 +618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 09c921b8830c596409b945b72ae2d577, type: 2}
 --- !u!1 &2982803287285291813
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 138719ee99d503c4f943eb62611e3402, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &3680498622371753899
 GameObject:
@@ -1125,6 +1122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278991945398952916}
+  - component: {fileID: 4747378984045045043}
   m_Layer: 0
   m_Name: LevelsMenuSigns
   m_TagString: Untagged
@@ -1153,6 +1151,18 @@ Transform:
   - {fileID: 304593358342982103}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4747378984045045043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797688072569309794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6526516951338677923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,7 +1307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 12a27bf66d0b1ce4699755f1fd8a8b8a, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &6674363790347833745
 GameObject:
@@ -1618,7 +1627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 63688e531d832f145a5d33238640b90e, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &7078506392416508620
 GameObject:
@@ -1940,6 +1948,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 213d6bcbced494145bf036905f47191c, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 7756397692314907075, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}

@@ -388,7 +388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 38449303555815c45a9d440895f34c47, type: 2}
 --- !u!1 &2211968222765252725
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8649419069726302802}
+  - component: {fileID: 2816819419467254518}
   m_Layer: 0
   m_Name: SettingsMenuSigns
   m_TagString: Untagged
@@ -599,6 +599,18 @@ Transform:
   - {fileID: 9149869272958560388}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2816819419467254518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2951855132662751774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3181052684799479576
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +735,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 646f14ceaa02e3046aa847a6a47399b8, type: 2}
 --- !u!1 &3875512206459499548
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +836,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 27d5c25f0d2accb4daec12dfea5c1ccd, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 7756397692314907075, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}
 --- !u!95 &3130995266854774909
@@ -1600,7 +1610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: ec4ba5eb3fdda37489c3bc9d9d51fb68, type: 2}
 --- !u!1 &9061652746111626787
 GameObject:
   m_ObjectHideFlags: 0

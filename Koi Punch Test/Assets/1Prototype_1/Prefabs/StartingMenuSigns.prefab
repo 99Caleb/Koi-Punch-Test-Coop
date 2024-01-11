@@ -497,7 +497,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: a6a18a795eb55bc4f9e80e153eb93455, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 4797688072569309794, guid: 760ae082d436cb44195fe6f03b715605, type: 3}
 --- !u!111 &2394665197969948366
@@ -660,7 +659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 30c86b0a1951e6f4e87a3817a10a4449, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 2951855132662751774, guid: a61c332b2d776d8448af8e137c1f064e, type: 3}
 --- !u!1 &7189463119491395854
@@ -847,6 +845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8999693063652977015}
+  - component: {fileID: 9122639272133113581}
   m_Layer: 0
   m_Name: StartingMenuSigns
   m_TagString: Untagged
@@ -872,6 +871,18 @@ Transform:
   - {fileID: 7242274636767473903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9122639272133113581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756397692314907075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8893506610381486947
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,7 +899,7 @@ GameObject:
   - component: {fileID: 1857828886443669740}
   m_Layer: 0
   m_Name: Play
-  m_TagString: Untagged
+  m_TagString: SceneChanger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1027,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac7a2a0366baf468c125ca6e72a67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: {fileID: 7400000, guid: 9306c9f4a026bd349ba157eb23eaa707, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
-  _newSceneName: Caleb
-  _fadeScreen: {fileID: 0}
+  _newSceneName: GameScene
