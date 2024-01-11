@@ -670,7 +670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8893506610381486947, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: SceneChanger
       objectReference: {fileID: 0}
     - target: {fileID: 8999693063652977015, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}
       propertyPath: m_LocalPosition.x
