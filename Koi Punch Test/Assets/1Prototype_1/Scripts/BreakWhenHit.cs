@@ -10,7 +10,14 @@ public class BreakWhenHit : AnimateOnTransition
     {
         Instantiate(breakPrefab,gameObject.transform.position,Quaternion.identity);
         EventManager.ExplodeTransition();
-        Destroy(gameObject);
+        if (gameObject.CompareTag("SceneChanger"))
+        {
+            gameObject.transform.localScale = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

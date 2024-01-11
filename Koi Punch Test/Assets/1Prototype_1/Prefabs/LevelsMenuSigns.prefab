@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: ResetScoreExplodeAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 8d128452a64832045aff743ffe3c99e6, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &703032577483573119
 GameObject:
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff79948bd118dfc40a7c2f95ebc2fbe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: LevelsTitleExplodeAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 09c921b8830c596409b945b72ae2d577, type: 2}
 --- !u!1 &2982803287285291813
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: LevelTwoExplodeAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 138719ee99d503c4f943eb62611e3402, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &3680498622371753899
 GameObject:
@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: LevelThreeExplodeAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 12a27bf66d0b1ce4699755f1fd8a8b8a, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &6674363790347833745
 GameObject:
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6206fbc889142604c942094212134069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: LevelOneExplodeAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 63688e531d832f145a5d33238640b90e, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
 --- !u!1 &7078506392416508620
 GameObject:
@@ -1940,6 +1940,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: MMfromLevelsExplodingAnim
+  _explodingAnimClip: {fileID: 7400000, guid: 213d6bcbced494145bf036905f47191c, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 7756397692314907075, guid: acba40eb7cf1f9645a0decc476f4de94, type: 3}

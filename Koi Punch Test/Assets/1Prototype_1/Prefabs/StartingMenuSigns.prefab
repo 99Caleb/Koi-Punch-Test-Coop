@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 7360466068108263613}
   - component: {fileID: 5919294071111474488}
   - component: {fileID: 5099604103199503268}
+  - component: {fileID: 2394665197969948366}
   m_Layer: 0
   m_Name: Levels
   m_TagString: Untagged
@@ -496,9 +497,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: LevelButtonExploding
+  _explodingAnimClip: {fileID: 7400000, guid: a6a18a795eb55bc4f9e80e153eb93455, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 4797688072569309794, guid: 760ae082d436cb44195fe6f03b715605, type: 3}
+--- !u!111 &2394665197969948366
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5818287817615388426}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &6157512339005261962
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef66618d94a159c47b12a891856fe20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: SettingsExplode
+  _explodingAnimClip: {fileID: 7400000, guid: 30c86b0a1951e6f4e87a3817a10a4449, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   newMenuParent: {fileID: 2951855132662751774, guid: a61c332b2d776d8448af8e137c1f064e, type: 3}
 --- !u!1 &7189463119491395854
@@ -999,7 +1016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acac7a2a0366baf468c125ca6e72a67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodingAnimClip: PlayButtonExplode
+  _explodingAnimClip: {fileID: 7400000, guid: 9306c9f4a026bd349ba157eb23eaa707, type: 2}
   breakPrefab: {fileID: 5783808238753370949, guid: c0045a2061fe068418778c1634d2b42a, type: 3}
   _newSceneName: Caleb
   _fadeScreen: {fileID: 0}

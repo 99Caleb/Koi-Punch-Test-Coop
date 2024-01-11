@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class AnimateOnTransition : MonoBehaviour
 {
-    private Animator _animator;
-    [SerializeField] private string _explodingAnimClip;
+     private Animator _animator;
+    //[SerializeField] private string _explodingAnimClip;
 
     private void Start()
     {
@@ -15,13 +15,9 @@ public class AnimateOnTransition : MonoBehaviour
     }
     private void ExplodeTransition()
     {
-        if(_explodingAnimClip == null)
-        {
-            Debug.Log("audio clip not found");
-            return;
-        }
-        _animator.Play(_explodingAnimClip);
-        Destroy(gameObject,1f);
+        _animator.SetTrigger("TransitionAnimation");
+        //_animator.Play(_explodingAnimClip);
+        Destroy(gameObject,5f);
     }
     
     private void OnDisable()
